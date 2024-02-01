@@ -1,24 +1,153 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-      "environmentName": {
-        "value": "${AZURE_ENV_NAME}"
-      },
-      "location": {
-        "value": "${AZURE_LOCATION}"
-      },
-      "myIpAddress": {
-        "value": "${MY_IP_ADDRESS}"
-      },
-      "useRedisCacheForAPIM" : {
-        "value": "${USE_REDIS_CACHE_APIM}"
-      },
-      "secondaryOpenAILocation" : {
-        "value": "${SECONDARY_OPENAI_LOCATION}"
-      },
-      "apimServiceName": {
-        "value": "${APIM_NAME}"
-      }
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "resourceGroupName": {
+      "value": "${RESOURCE_GROUP_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "myIpAddress": {
+      "value": "${MY_IP_ADDRESS}"
+    },
+    "secondaryOpenAILocation" : {
+      "value": "${SECONDARY_OPENAI_LOCATION}"
+    },
+   
+   
+    "openAiServiceName": {
+      "value": "${OPEN_AI_SERVICE_NAME}"
+    },
+
+
+    "apimServiceName": {
+      "value": "${APIM_SERVICE_NAME}"
+    },
+    "apimSkuName": {
+      "value": "${APIM_SKU_NAME}"
+    },
+    "apimSkuCount": {
+      "value": "${APIM_SKU_COUNT}"
+    },
+    "apimPublisherEmail": {
+      "value": "${APIM_PUBLISHER_EMAIL}"
+    },
+    "apimPublisherName": {
+      "value": "${APIM_PUBLISHER_NAME}"
+    },
+    "apimIdentityName": {
+      "value": "${APIM_IDENTITY_NAME}"
+    },
+
+
+    "proxyAppName": {
+      "value": "${PROXY_APP_NAME}"
+    },
+    "proxyIdentityName": {
+      "value": "${PROXY_IDENTITY_NAME}"
+    },
+    "deploymentScriptIdentityName": {
+      "value": "${DEPLOYMENT_SCRIPT_IDENTITY_NAME}"
+    },
+ 
+
+    "redisCacheServiceName": {
+      "value": "${REDIS_CACHE_SERVICE_NAME}"
+    },
+    "redisSku": {
+      "value": "${REDIS_SKU}"
+    },
+
+
+    "containerAppsEnvironmentName": {
+      "value": "${CONTAINER_APPS_ENVIRONMENT_NAME}"
+    },
+    "appConfigurationName": {
+      "value": "${APP_CONFIGURATION_NAME}"
+    },
+    
+    
+    "logAnalyticsName": {
+      "value": "${LOG_ANALYTICS_NAME}"
+    },
+    "applicationInsightsName": {
+      "value": "${APPLICATION_INSIGHTS_NAME}"
+    },
+    "dataCollectionEndpointName": {
+      "value": "${DATA_COLLECTION_ENDPOINT_NAME}"
+    },
+    "dataCollectionRuleName": {
+      "value": "${DATA_COLLECTION_RULE_NAME}"
+    },
+    "applicationInsightsDashboardName": {
+      "value": "${APPLICATION_INSIGHTS_DASHBOARD_NAME}"
+    },
+    
+    
+    "containerRegistryName": {
+      "value": "${CONTAINER_REGISTRY_NAME}"
+    },
+   
+    
+    "vnetName": {
+      "value": "${VNET_NAME}"
+    },
+    "vNetAddressPrefix": {
+      "value": "${VNET_ADDRESS_PREFIX}"
+    },
+    "apimSubnetAddressPrefix": {
+      "value": "${APIM_SUBNET_ADDRESS_PREFIX}"
+    },
+    "acaSubnetAddressPrefix": {
+      "value": "${ACA_SUBNET_ADDRESS_PREFIX}"
+    },
+    "privateEndpointSubnetAddressPrefix": {
+      "value": "${PRIVATE_ENDPOINT_SUBNET_ADDRESS_PREFIX}"
+    },
+
+
+    "acaSubnetName": {
+      "value": "${ACA_SUBNET_NAME}"
+    },
+    "privateEndpointSubnetName": {
+      "value": "${PRIVATE_ENDPOINT_SUBNET_NAME}"
+    },
+    "apimSubnetName": {
+      "value": "${APIM_SUBNET_NAME}"
+    },
+
+
+    "acaNsgName": {
+      "value": "${ACA_NSG_NAME}"
+    },
+    "privateEndpointNsgName": {
+      "value": "${PRIVATE_ENDPOINT_NSG_NAME}"
+    },
+    "apimNsgName": {
+      "value": "${APIM_NSG_NAME}"
+    },
+
+
+
+    "applicationInsightsPrivateEndpointName": {
+      "value": "${APPLICATION_INSIGHTS_PRIVATE_ENDPOINT_NAME}"
+    },
+    "containerAppsEnvironmentprivateDns": {
+      "value": "${CONTAINER_APPS_ENVIRONMENT_PRIVATE_DNS}"
+    },
+    "redisCachePrivateEndpointName": {
+      "value": "${REDIS_CACHE_PRIVATE_ENDPOINT_NAME}"
+    },
+    "containerRegistryPrivateEndpointName": {
+      "value": "${CONTAINER_REGISTRY_PRIVATE_ENDPOINT_NAME}"
+    },
+    "openAiPrivateEndpointName": {
+      "value": "${OPEN_AI_PRIVATE_ENDPOINT_NAME}"
     }
+
+  }
 }
